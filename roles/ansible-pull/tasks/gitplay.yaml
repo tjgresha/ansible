@@ -1,0 +1,8 @@
+---
+- name: 'Just ensuring the repo checkout exists'
+  ansible.builtin.git:
+    repo: git@github.com:dci-labs/intel-oregon-lab-config.git
+    dest: "{{ dest }}"
+    key_file: "{{ sshkey }}"
+    accept_hostkey: yes
+    force: yes
