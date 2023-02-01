@@ -6,3 +6,6 @@
     key_file: "{{ sshkey }}"
     accept_hostkey: yes
     force: yes
+
+  tasks:
+  - import_playbook: gitplay.yaml
