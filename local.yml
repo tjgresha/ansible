@@ -3,4 +3,4 @@
   connection: local
 
   tasks:
-  - import_playbook: gitplay.yaml
+- import_playbook: gitplay.yml
