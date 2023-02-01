@@ -1,9 +1,10 @@
 ---
-- name: 'Just ensuring the repo checkout exists'
-  ansible.builtin.git:
-    repo: git@github.com:dci-labs/intel-oregon-lab-config.git
-    dest: ~/checkout 
-    key_file: ~/.ssh/id_rsa
-    accept_hostkey: yes
-    force: yes
+- tasks:
+   - name: 'Just ensuring the repo checkout exists'
+     ansible.builtin.git:
+     repo: git@github.com:dci-labs/intel-oregon-lab-config.git
+     dest: ~/checkout 
+     key_file: ~/.ssh/id_rsa
+     accept_hostkey: yes
+     force: yes
 
