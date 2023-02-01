@@ -1,3 +1,6 @@
 - name: "Playing with Ansible and Git"
   hosts: localhost
   connection: local
+
+  tasks:
+  - import_playbook: gitplay.yaml
